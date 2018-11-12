@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Actividad 8 Creacion de una calculadora de porcentajes
         //En esta actividad crearas una aplicacion que calcule la diferencia relativa en porcentaje entre dos numeros.
-
         /*cargamos nuestas variables con los objetos que se encuentran en el lay out*/
         setContentView(R.layout.activity_main);
         V1=(EditText)findViewById(R.id.editText);
