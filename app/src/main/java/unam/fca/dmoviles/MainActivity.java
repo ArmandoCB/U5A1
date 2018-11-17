@@ -37,23 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 res.setText(s+"%");
             }
         });
-
-
-
         /*LINEAS PARA EL GUARDADO DE LA VARIABLE TEXTVIEW*/
-/*
-        @Override
-        public void onRestoreInstanceState(Bundle savedInstanceState) {
-            final TextView res = findViewById(R.id.textViewResult);
-            res.setText(savedInstanceState.getString(TEXT_VIEW_KEY));
-        }
-        @Override
-        public void onSaveInstanceState(Bundle outState) {
-            final TextView res = findViewById(R.id.textViewResult);
-            outState.putString(TEXT_VIEW_KEY, res.getText().toString());
-            super.onSaveInstanceState(outState);
-        }
-*/
+
         //Actividades
         //a) Ejecuta la aplicacion y familiarizate con el layout definido en R.layout.activity_main
         //b) Crea la logica para calcular la diferencia relativa en porcentaje entre dos numeros
@@ -64,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
         //e) Anota tus respuestas y las capturas de pantalla en un documento en Word
         //f) Sube tu codigo al repositorio.
         //g) Sube el documento Word a la plataforma Moodle. Incluye la liga a tu repositorio
+    }
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        final TextView res = findViewById(R.id.textViewResult);
+        res.setText(savedInstanceState.getString(TEXT_VIEW_KEY));
+    }
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        final TextView res = findViewById(R.id.textViewResult);
+        outState.putString(TEXT_VIEW_KEY, res.getText().toString());
+        super.onSaveInstanceState(outState);
     }
 }
 
